@@ -1,35 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crystals Collector</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+    <title>Crystal Collectors!</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript"  src="./assets/javascript/game.js"></script>
 </head>
-<body id = "body-tag">
-    <h1 id="crystal-title">Crystal Collector!</h1>
-    <div id="instructions">
-        <p class="paragraph" id="ins-para-1">
-            You will be given a random number at the start of the game.
-            There are four crystals below.
-        </p>
-        <p class="paragraph" id="ins-par-2"> 
-            By clicking on a crystal, you will add a specific amount of points to your total score.
-        </p>
-        <p class = "paragraph" id="ins-par-3">
-            You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.
-        </p>
-        <p class = "paragraph" id="ins-par-4">
-            The value of each crystal is hidden from you unitl you click on it.
-        </p>
-        <p class = "paragraph" id="ins-par-5">
-            Each time the game starts, the game will change the values of each crystal.
-        </p>
+
+<body>
+    <div id='container'>
+        <div id='parentTitleBox'>
+            <div class='jumbotron'>
+                <h1>Crystal Collectors!</h1>
+            </div>
+        </div>
+
+        <div id="instructionBox">
+                <p class="paragraph" id="ins-para-1">
+                        You will be given a random number at the start of the game.
+                        There are four crystals below.
+                    </p>
+                    <p class="paragraph" id="ins-par-2"> 
+                        By clicking on a crystal, you will add a specific amount of points to your total score.
+                    </p>
+                    <p class = "paragraph" id="ins-par-3">
+                        You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.
+                    </p>
+                    <p class = "paragraph" id="ins-par-4">
+                        The value of each crystal is hidden from you unitl you click on it.
+                    </p>
+                    <p class = "paragraph" id="ins-par-5">
+                        Each time the game starts, the game will change the values of each crystal.
+                    </p>
+        </div>
+        <div id="parentRanW1Box">
+            <div class="ranNumBox scores">
+            </div>
+            <div class="scoreDisplay scores">
+                <p class="scoreDisplayChild scores">Your Score</p>
+            </div>
+            <div class="winLoseBox">
+                <p> Wins: </p>
+                <p class="win">0</p>
+                <p> Losses: </p>
+                <p class="loss">0</p>
+            </div>
+        </div>
+
+        <div id="parentGameButtons">
+
+            <div type="button" class="box b1 crystal1" value='1'>
+                <img src="./assets/images/crystal-10.png" width="180%">
+            </div>
+
+            <div type="button" class="box b2 crystal2" value='2'>
+                <img src="./assets/images/crystal-8.png" width="180%">
+            </div>
+
+            <div type="button" class="box b3 crystal3" value='3'>
+                <img src="./assets/images/crystal-6.png" width="180%">
+            </div>
+            <div type="button" class="box b4 crystal4" value='4'>
+                    <img src="./assets/images/crystal-4.png" width="200%">
+            </div>
+        </div>
+
     </div>
-    <div id=rand-num></div>
-   
 </body>
+
 </html>
